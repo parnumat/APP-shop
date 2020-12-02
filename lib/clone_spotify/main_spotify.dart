@@ -3,7 +3,7 @@ import 'package:shop_app/clone_spotify/screens/home/home_screen_spotiyf.dart';
 import 'package:shop_app/clone_spotify/screens/Search/search_screen_spotify.dart';
 import 'package:shop_app/clone_spotify/screens/playlist/playlist_screen_spotify.dart';
 import 'package:shop_app/clone_spotify/screens/profile/profile_screen_spotify.dart';
-import 'package:shop_app/constants.dart';
+import 'package:shop_app/shop_app/constants.dart';
 
 class MainSpotify extends StatefulWidget {
   MainSpotify({Key key}) : super(key: key);

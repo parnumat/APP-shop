@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/order66/constants.dart';
+import 'package:shop_app/order66/sections/aboutSection/about_section.dart';
+import 'package:shop_app/order66/sections/recentWorkSection/recent_work_section.dart';
+import 'package:shop_app/order66/sections/serviceSection/service_section.dart';
 import 'package:shop_app/order66/sections/topSection/top_section.dart';
 
 class HomeScreenOrder66 extends StatelessWidget {
@@ -11,6 +15,15 @@ class HomeScreenOrder66 extends StatelessWidget {
         child: Column(
           children: [
             TopSection(),
+            SizedBox(
+              height: oDefaultPadding * 2,
+            ),
+            AboutSection(),
+            ServiceSection(),
+            RecentWorkSection(),
+            SizedBox(
+              height: 500,
+            ),
           ],
         ),
       ),

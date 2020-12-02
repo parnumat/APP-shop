@@ -11,23 +11,23 @@ class Feedback {
 List<Feedback> feedbacks = [
   Feedback(
     id: 1,
-    name: "Parnumat Niropas",
+    name: "Ronald Thompson",
     review: review,
-    userPic: "assets/images/showA.png",
+    userPic: "assets/images/people.png",
     color: Color(0xFFFFF3DD),
   ),
   Feedback(
     id: 2,
-    name: "Parnumat Niropas",
+    name: "Ronald Thompson",
     review: review,
-    userPic: "assets/images/showA.png",
-    color: Color(0xFFD9FFFD),
+    userPic: "assets/images/people.png",
+    color: Color(0xFFD9FFFC),
   ),
   Feedback(
     id: 3,
-    name: "Parnumat Niropas",
+    name: "Ronald Thompson",
     review: review,
-    userPic: "assets/images/showA.png",
+    userPic: "assets/images/people.png",
     color: Color(0xFFFFE0E0),
   ),
 ];
