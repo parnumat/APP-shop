@@ -21,9 +21,9 @@ class HomeScreenOrder66 extends StatelessWidget {
             AboutSection(),
             ServiceSection(),
             RecentWorkSection(),
-            SizedBox(
-              height: 500,
-            ),
+            // SizedBox(
+            //   height: 500,
+            // ),
           ],
         ),
       ),
