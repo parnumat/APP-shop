@@ -24,7 +24,6 @@ class HomeScreenOrder66 extends StatelessWidget {
             FeedBackSection(),
             SizedBox(height: oDefaultPadding),
             ContactSection(),
-            SizedBox(height: 200),
           ],
         ),
       ),

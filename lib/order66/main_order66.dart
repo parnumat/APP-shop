@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'package:shop_app/order66/constants.dart';
 import 'package:shop_app/order66/home_screen_order66.dart';
 
 class MainOrder66 extends StatelessWidget {
@@ -8,6 +10,7 @@ class MainOrder66 extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(inputDecorationTheme: oDefaultInputDecorationTheme),
       // theme: ThemeData.dark(),
       // theme: ThemeData(fontFamily: 'Prompt'),
       home: HomeScreenOrder66(),

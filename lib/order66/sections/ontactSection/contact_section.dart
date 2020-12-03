@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shop_app/order66/constants.dart';
 import 'package:shop_app/order66/sections/ontactSection/widget/socail_card.dart';
 import 'package:shop_app/order66/sections/serviceSection/widget/service_title.dart';
+import 'package:shop_app/order66/widget/default_button.dart';
+import 'package:shop_app/order66/widget/my_outline_button.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({Key key}) : super(key: key);
@@ -9,7 +11,7 @@ class ContactSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 500,
+      // height: 500,
       width: double.infinity,
       decoration: BoxDecoration(
         color: Color(0xFFE8F0F9),
@@ -55,14 +57,92 @@ class ContactSection extends StatelessWidget {
                       onPress: () {},
                     ),
                     SocialCard(
-                      iconSrc: "assets/images/messager.png",
+                      iconSrc: "assets/images/messanger.png",
                       color: Color(0xFFE8F0F9),
-                      name: "Messager",
+                      name: "Message",
                       onPress: () {},
                     ),
                   ],
-                )
+                ),
+                SizedBox(height: oDefaultPadding * 2),
+                ContactForm()
               ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class ContactForm extends StatelessWidget {
+  const ContactForm({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Form(
+      child: Wrap(
+        spacing: oDefaultPadding * 2.5,
+        runSpacing: oDefaultPadding * 1.5,
+        children: [
+          SizedBox(
+            width: 470,
+            child: TextField(
+              onChanged: (value) {},
+              decoration: InputDecoration(
+                labelText: "Your Name",
+                hintText: "Enter Your Name",
+              ),
+            ),
+          ),
+          SizedBox(
+            width: 470,
+            child: TextField(
+              onChanged: (value) {},
+              decoration: InputDecoration(
+                labelText: "Email Address",
+                hintText: "Enter Your Email Address",
+              ),
+            ),
+          ),
+          SizedBox(
+            width: 470,
+            child: TextField(
+              onChanged: (value) {},
+              decoration: InputDecoration(
+                labelText: "Project Budget",
+                hintText: "Select Project Budget",
+              ),
+            ),
+          ),
+          SizedBox(
+            width: 470,
+            child: TextField(
+              onChanged: (value) {},
+              decoration: InputDecoration(
+                labelText: "Your Name",
+                hintText: "Enter Your Name",
+              ),
+            ),
+          ),
+          TextField(
+            maxLines: 5,
+            onChanged: (value) {},
+            decoration: InputDecoration(
+              labelText: "Description",
+              hintText: "Write some description",
+            ),
+          ),
+          SizedBox(height: oDefaultPadding / 2),
+          Center(
+            child: FittedBox(
+              child: DefaultButton(
+                imageSrc: "assets/images/contact_icon.png",
+                text: "Contact Me",
+                press: () {},
+              ),
             ),
           )
         ],

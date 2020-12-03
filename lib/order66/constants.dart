@@ -15,11 +15,12 @@ final oDefaultCardShadow = BoxShadow(
     blurRadius: 50,
     color: Color(0xFF0700B1).withOpacity(0.1));
 
-const iDefaultInputDecorationTheme = InputDecorationTheme(
+final oDefaultInputDecorationTheme = InputDecorationTheme(
     border: oDefaultOutlineInputBorder,
     enabledBorder: oDefaultOutlineInputBorder,
     focusedBorder: oDefaultOutlineInputBorder);
 
-const oDefaultOutlineInputBorder = OutlineInputBorder(
+final oDefaultOutlineInputBorder = OutlineInputBorder(
+  borderRadius: BorderRadius.circular(50),
   borderSide: BorderSide(color: Color(0xFFCEE4FD)),
 );
