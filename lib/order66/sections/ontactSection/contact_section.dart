@@ -3,7 +3,6 @@ import 'package:shop_app/order66/constants.dart';
 import 'package:shop_app/order66/sections/ontactSection/widget/socail_card.dart';
 import 'package:shop_app/order66/sections/serviceSection/widget/service_title.dart';
 import 'package:shop_app/order66/widget/default_button.dart';
-import 'package:shop_app/order66/widget/my_outline_button.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({Key key}) : super(key: key);
@@ -42,7 +41,7 @@ class ContactSection extends StatelessWidget {
             child: Column(
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     SocialCard(
                       iconSrc: "assets/images/skype.png",
