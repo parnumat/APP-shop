@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:shop_app/clone_spotify/constants.dart';
 
 class ALbumContainer extends StatelessWidget {
+  final String url;
   const ALbumContainer({
     Key key,
+    this.url,
   }) : super(key: key);
 
   @override
@@ -20,7 +22,7 @@ class ALbumContainer extends StatelessWidget {
               child: Container(
                 width: 100.0,
                 height: 100.0,
-                child: Image.asset("assets/images/BlackpinkB.png"),
+                child: Image.asset(url),
               ),
             ),
             SizedBox(height: iDefaultPadding / 10),
